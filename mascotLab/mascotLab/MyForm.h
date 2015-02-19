@@ -66,7 +66,7 @@ namespace Project1 {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(117, 59);
 			this->button1->TabIndex = 1;
-			this->button1->Text = L"Toggle Visibility";
+			this->button1->Text = L"Show Icon";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -110,6 +110,7 @@ namespace Project1 {
 				 if (vis == true)
 					 g->DrawImage(bmp, x, y);
 				 else Refresh();
+				 //add code here when i learn how to erase image
 	}
 };
 }
